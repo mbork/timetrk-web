@@ -2,7 +2,7 @@
 	<head>
 		<script>
 			const readActivities = () => {
-				UART.eval("require('Storage').readJSON('timetrackactivities.json')").then(a => console.log(a))
+				UART.eval("require('Storage').readJSON('timetrackactivities.json')").then(a => window.activities = a)
 			}
 		</script>
  </head>
